@@ -17,21 +17,21 @@ public class SellVacationView implements Initializable {
 
     public Button publish_for_sale_button;
     public Button BackButton;
-    public TextField from;
-    public DatePicker departureDate;
-    public TextField departureTime;
-    public TextField destination;
+    public TextField Event;
+    public DatePicker startDate;
+    public TextField startTime;
+    public TextField quantity;
     public DatePicker returnDate;
     public TextField returnTime;
-    public DatePicker arrivalDate;
-    public TextField arrivalTime;
+    public DatePicker EndDate;
+    public TextField EndTime;
     public TextField classType;
     public TextField ticketType;
     public TextField connectionCity;
     public TextField baggageInfo;
     public CheckBox baggage;
     public TextField Price;
-    public TextField company;
+    public TextField description;
 
 //    public void publish(ActionEvent actionEvent) {
 //        String _from, _departureTime, _destination, _returnTime, _arrivalTime,
@@ -72,12 +72,12 @@ public class SellVacationView implements Initializable {
         String _from, _departureTime, _destination, _returnTime, _arrivalTime,
                 _classType, _ticketType, _connectionCity, _baggageInfo, _price, _company;
         boolean _baggage;
-        _from = from.getText();
-        _departureTime = departureTime.getText();
-        _destination = destination.getText();
+        _from = Event.getText();
+        _departureTime = startTime.getText();
+        _destination = quantity.getText();
         //_returnTime = returnTime.getText();
-        _returnTime = "0";
-        _arrivalTime = arrivalTime.getText();
+        _returnTime = "00:00";
+        _arrivalTime = EndTime.getText();
         _classType = classType.getText();
         //_ticketType = ticketType.getText();
         _ticketType ="0";
@@ -86,9 +86,9 @@ public class SellVacationView implements Initializable {
         _baggageInfo = "0";
         _baggage = false;
         _price = Price.getText();
-        _company = company.getText();
+        _company = description.getText();
 
-        Object[] vacation_details = new Object[]{_from,departureDate, _departureTime,_destination,arrivalDate,_arrivalTime,arrivalDate,_returnTime,_ticketType,_company,_connectionCity,baggage,_baggageInfo,_classType,_price,"Available"};
+        Object[] vacation_details = new Object[]{_from,startDate, _departureTime,_destination,EndDate,_arrivalTime,EndDate,_returnTime,_ticketType,_company,_connectionCity,baggage,_baggageInfo,_classType,_price,"Available"};
         boolean flag = false;
         try {
             flag = controller.insertNewVacation("Vacations", vacation_details);
@@ -102,8 +102,8 @@ public class SellVacationView implements Initializable {
         if(flag) {
             Stage s = (Stage) BackButton.getScene().getWindow();
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Vacation Published");
-            alert.setHeaderText("Your vacation was published!");
+            alert.setTitle("Ticket Published");
+            alert.setHeaderText("Your Ticket was published!");
             alert.showAndWait();
             s.close();
 
