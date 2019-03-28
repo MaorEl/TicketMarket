@@ -75,17 +75,20 @@ public class SellVacationView implements Initializable {
         _from = from.getText();
         _departureTime = departureTime.getText();
         _destination = destination.getText();
-        _returnTime = returnTime.getText();
+        //_returnTime = returnTime.getText();
+        _returnTime = "0";
         _arrivalTime = arrivalTime.getText();
         _classType = classType.getText();
-        _ticketType = ticketType.getText();
-        _connectionCity = connectionCity.getText();
-        _baggageInfo = baggageInfo.getText();
-        _baggage = baggage.isSelected();
+        //_ticketType = ticketType.getText();
+        _ticketType ="0";
+        //_connectionCity = connectionCity.getText();
+        _connectionCity="0";
+        _baggageInfo = "0";
+        _baggage = false;
         _price = Price.getText();
         _company = company.getText();
 
-        Object[] vacation_details = new Object[]{_from,departureDate, _departureTime,_destination,arrivalDate,_arrivalTime,returnDate,_returnTime,_ticketType,_company,_connectionCity,baggage,_baggageInfo,_classType,_price,"Available"};
+        Object[] vacation_details = new Object[]{_from,departureDate, _departureTime,_destination,arrivalDate,_arrivalTime,arrivalDate,_returnTime,_ticketType,_company,_connectionCity,baggage,_baggageInfo,_classType,_price,"Available"};
         boolean flag = false;
         try {
             flag = controller.insertNewVacation("Vacations", vacation_details);
