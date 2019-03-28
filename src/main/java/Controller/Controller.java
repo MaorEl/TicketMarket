@@ -145,7 +145,7 @@ public class Controller {
 
         details[3] = (String) data[3]; //first name
         details[4] = (String) data[4]; //last name
-        details[5] = (String) data[5]; //city
+        details[5] = (String) data[5]; //phone
 
         if (details[1].isEmpty() || details[0].isEmpty() || details[5].isEmpty() || details[4].isEmpty() || details[3].isEmpty()) {
             throw new NotFilledAllFieldsException();
