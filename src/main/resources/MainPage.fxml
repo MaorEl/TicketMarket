@@ -59,7 +59,7 @@
                 <Image url="@images/logo.png" />
             </image>
         </ImageView>
-        <AnchorPane fx:id="account_settings" layoutX="148.0" layoutY="156.0" maxHeight="307.0" maxWidth="400.0" minHeight="302.0" minWidth="286.0" prefHeight="307.0" prefWidth="286.0" style="-fx-background-color: dddddd;" visible="false">
+        <AnchorPane fx:id="account_settings" layoutX="147.0" layoutY="156.0" maxHeight="307.0" maxWidth="400.0" minHeight="302.0" minWidth="286.0" prefHeight="307.0" prefWidth="286.0" style="-fx-background-color: dddddd;" visible="false">
             <children>
                 <Pane prefHeight="74.0" prefWidth="286.0" style="-fx-background-color: ffffff;" AnchorPane.bottomAnchor="233.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <children>
