@@ -227,8 +227,10 @@ public class MainPageView implements Initializable {
 //        s.close();
         try {
             Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("SellVacationWindow.fxml"));
+
             Stage stage = new Stage();
             stage.initModality(Modality.APPLICATION_MODAL);
+            stage.initStyle(StageStyle.UNDECORATED);
             stage.setResizable(false);
             stage.setTitle("Sell Vacation");
             Scene scene = new Scene(root);
