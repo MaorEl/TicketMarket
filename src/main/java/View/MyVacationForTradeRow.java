@@ -112,7 +112,7 @@ public class MyVacationForTradeRow {
                 Stage stage = new Stage();
                 stage.initModality(Modality.APPLICATION_MODAL);
                 stage.setResizable(true);
-                stage.setTitle("Details Vacation");
+                stage.setTitle("Details Ticket");
                 Scene scene = new Scene(root);
                 stage.setScene(scene);
                 stage.show();

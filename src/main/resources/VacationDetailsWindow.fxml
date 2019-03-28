@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="448.0" maxWidth="700.0" minHeight="400.0" minWidth="700.0" prefHeight="448.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.VacationDetailsWindow">
+<AnchorPane maxHeight="448.0" maxWidth="700.0" minHeight="400.0" minWidth="700.0" prefHeight="448.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.VacationDetailsWindow">
     <children>
         <ImageView fitHeight="447.0" fitWidth="713.0" nodeOrientation="INHERIT" pickOnBounds="true">
             <image>
@@ -24,29 +24,25 @@
                                 <Font size="17.0" />
                             </font>
                         </Label>
-                        <ImageView fitHeight="67.0" fitWidth="61.0" layoutX="579.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@images/vacations_icon.png" />
-                            </image>
-                        </ImageView>
                     </children>
                 </Pane>
                 <Button fx:id="BackButton" layoutX="285.0" layoutY="353.0" mnemonicParsing="false" onAction="#go_main" text="Main Menu" />
             <Label layoutX="27.0" layoutY="192.0" prefHeight="18.0" prefWidth="87.0" text="End Date" />
-            <Label layoutX="27.0" layoutY="229.0" prefHeight="18.0" prefWidth="112.0" text="Event's Type" />
-            <Label layoutX="27.0" layoutY="266.0" prefHeight="33.0" prefWidth="87.0" text="Discription" />
+            <Label layoutX="27.0" layoutY="276.0" prefHeight="18.0" prefWidth="112.0" text="Event's Type" />
+            <Label layoutX="27.0" layoutY="308.0" prefHeight="33.0" prefWidth="87.0" text="Description" />
               <Label layoutX="335.0" layoutY="110.0" prefHeight="33.0" prefWidth="87.0" text="Price($)" />
             <Label layoutX="335.0" layoutY="78.0" prefHeight="33.0" prefWidth="87.0" text="Quantity" />
-            <Label fx:id="l_from" layoutX="131.0" layoutY="77.0" prefHeight="17.0" prefWidth="112.0" />
-            <Label fx:id="l_classType" layoutX="131.0" layoutY="274.0" prefHeight="17.0" prefWidth="112.0" />
-            <Label fx:id="l_destination" layoutX="439.0" layoutY="77.0" prefHeight="17.0" prefWidth="112.0" />
-            <Label fx:id="l_departTime" layoutX="132.0" layoutY="155.0" prefHeight="17.0" prefWidth="112.0" />
-            <Label fx:id="l_departDate" layoutX="132.0" layoutY="118.0" prefHeight="17.0" prefWidth="112.0" />
-            <Label fx:id="l_arrivelTime" layoutX="132.0" layoutY="234.0" prefHeight="17.0" prefWidth="112.0" />
-            <Label fx:id="l_returnDate" layoutX="439.0" layoutY="120.0" prefHeight="17.0" prefWidth="112.0" />
-            <Label fx:id="l_price" layoutX="439.0" layoutY="271.0" prefHeight="17.0" prefWidth="112.0" />
-            <Label fx:id="l_arrivelDate" layoutX="132.0" layoutY="196.0" prefHeight="17.0" prefWidth="112.0" />
+            <Label fx:id="event" layoutX="131.0" layoutY="77.0" prefHeight="17.0" prefWidth="112.0" />
+            <Label fx:id="description" layoutX="131.0" layoutY="318.0" prefHeight="17.0" prefWidth="112.0" />
+            <Label fx:id="quantity" layoutX="439.0" layoutY="87.0" prefHeight="17.0" prefWidth="112.0" />
+            <Label fx:id="startTime" layoutX="132.0" layoutY="155.0" prefHeight="17.0" prefWidth="112.0" />
+            <Label fx:id="startDate" layoutX="132.0" layoutY="118.0" prefHeight="17.0" prefWidth="112.0" />
+            <Label fx:id="type" layoutX="131.0" layoutY="280.0" prefHeight="17.0" prefWidth="112.0" />
+            <Label fx:id="price" layoutX="439.0" layoutY="120.0" prefHeight="17.0" prefWidth="112.0" />
+            <Label fx:id="EndTime" layoutX="139.0" layoutY="238.0" prefHeight="17.0" prefWidth="112.0" />
+            <Label fx:id="EndDate" layoutX="132.0" layoutY="196.0" prefHeight="17.0" prefWidth="112.0" />
             <Label fx:id="l_baggage" layoutX="439.0" layoutY="311.0" prefHeight="17.0" prefWidth="112.0" />
+            <Label layoutX="27.0" layoutY="237.0" prefHeight="18.0" prefWidth="112.0" text="End Time" />
             </children>
         </Pane>
         <Label layoutX="55.0" layoutY="102.0" prefHeight="18.0" prefWidth="87.0" text="Event's Title" />

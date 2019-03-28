@@ -105,7 +105,7 @@ public class PurchaseForBuyerRow {
             //todo: add cancel option on button Cancel
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Not Implemented");
-            alert.setHeaderText("Will do that on next part of work.\n you can buy vacations so enjoy!!! bye");
+            alert.setHeaderText("Will do that on next part of work.");
             alert.showAndWait();
         });
 
@@ -117,7 +117,7 @@ public class PurchaseForBuyerRow {
                 Stage stage = new Stage();
                 stage.initModality(Modality.APPLICATION_MODAL);
                 stage.setResizable(true);
-                stage.setTitle("Details Vacation");
+                stage.setTitle("Details Ticket");
                 Scene scene = new Scene(root);
                 stage.setScene(scene);
                 stage.show();

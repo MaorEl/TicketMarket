@@ -13,20 +13,15 @@ import java.util.ResourceBundle;
 public class VacationDetailsWindow implements Initializable {
 
     public Button BackButton;
-    public Label l_from;
-    public Label l_departDate;
-    public Label l_departTime;
-    public Label l_destination;
-    public Label l_arrivelDate;
-    public Label l_arrivelTime;
-    public Label l_returnDate;
-    public Label l_returnTime;
-    public Label l_ticketType;
-    public Label l_company;
-    public Label l_connectionCity;
-    public Label l_classType;
-    public Label l_price;
-    public Label l_baggage;
+    public Label event;
+    public Label description;
+    public Label quantity;
+    public Label startTime;
+    public Label startDate;
+    public Label EndTime;
+    public Label EndDate;
+    public Label type;
+    public Label price;
 
     private Controller controller = Controller.getInstance();
 
@@ -34,20 +29,20 @@ public class VacationDetailsWindow implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         String vacationID = controller.vacationID;
         String[] details = controller.readVacation(vacationID);
-        l_from.setText(details[2]);
-        l_departDate.setText(details[3]);
-        l_departTime.setText(details[4]);
-        l_destination.setText(details[5]);
-        l_arrivelDate.setText(details[6]);
-        l_arrivelTime.setText(details[7]);
-        l_returnDate.setText(details[8]);
-        l_returnTime.setText(details[9]);
-        l_ticketType.setText(details[10]);
-        l_company.setText(details[11]);
-        l_connectionCity.setText(details[12]);
-        l_baggage.setText(details[14]);
-        l_classType.setText(details[15]);
-        l_price.setText(details[16] + "$");
+        event.setText(details[2]);
+        startDate.setText(details[3]);
+        startTime.setText(details[4]);
+        quantity.setText(details[5]);//quantity
+        EndDate.setText(details[6]);
+        EndTime.setText(details[7]);
+        //l_returnDate.setText(details[8]);
+        //l_returnTime.setText(details[9]);
+        //l_ticketType.setText(details[10]);
+        description.setText(details[11]);
+        //l_connectionCity.setText(details[12]);
+        //l_baggage.setText(details[14]);
+        type.setText(details[15]);
+        price.setText(details[16] + "$");
     }
 
     public void go_main(ActionEvent actionEvent) {

@@ -111,7 +111,7 @@ public class MyVacationsRow {
                 Stage stage = new Stage();
                 stage.initModality(Modality.APPLICATION_MODAL);
                 stage.setResizable(true);
-                stage.setTitle("Details Vacation");
+                stage.setTitle("Details Ticket");
                 Scene scene = new Scene(root);
                 stage.setScene(scene);
                 stage.show();
@@ -124,7 +124,7 @@ public class MyVacationsRow {
 
         delete.setOnAction(event -> {
             Alert alert = new Alert(Alert.AlertType.WARNING,
-                    "Are you sure you want to delete this vacation?",
+                    "Are you sure you want to delete this ticket?",
                     ButtonType.YES, ButtonType.NO);
             Optional<ButtonType> result = alert.showAndWait();
             if (result.get() == ButtonType.YES) {

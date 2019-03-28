@@ -125,7 +125,7 @@ public class VacationsForSearchRow {
                 if (controller.get_connected_user_id().equals(this.SellerUserName)) {
                     Alert alert = new Alert(Alert.AlertType.ERROR);
                     alert.setTitle("Your request to trade has been cancelled");
-                    alert.setHeaderText("You can't trade vacation with yourself");
+                    alert.setHeaderText("You can't trade ticket with yourself");
                     alert.showAndWait();
                     return;
                 }
@@ -139,7 +139,7 @@ public class VacationsForSearchRow {
                         stage.initModality(Modality.APPLICATION_MODAL);
                         stage.setResizable(true);
 
-                        stage.setTitle("Choose one vacation");
+                        stage.setTitle("Choose one ticket");
                         Scene scene = new Scene(root);
                         stage.setScene(scene);
                         stage.show();
@@ -150,7 +150,7 @@ public class VacationsForSearchRow {
             } else {
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setTitle("Log in");
-                alert.setHeaderText("Only signed users are allowing to request to buy vacations\nPlease close the window, log in and try again");
+                alert.setHeaderText("Only signed users are allowing to request to buy tickets\nPlease close the window, log in and try again");
                 alert.showAndWait();
             }
         });
@@ -163,7 +163,7 @@ public class VacationsForSearchRow {
                 Stage stage = new Stage();
                 stage.initModality(Modality.APPLICATION_MODAL);
                 stage.setResizable(true);
-                stage.setTitle("Details Vacation");
+                stage.setTitle("Details Ticket");
                 Scene scene = new Scene(root);
                 stage.setScene(scene);
                 stage.show();
@@ -181,7 +181,7 @@ public class VacationsForSearchRow {
                 if (controller.get_connected_user_id().equals(this.SellerUserName)) {
                     Alert alert = new Alert(Alert.AlertType.ERROR);
                     alert.setTitle("Your request to buy has been cancelled");
-                    alert.setHeaderText("You can't buy vacation from yourself");
+                    alert.setHeaderText("You can't buy ticket from yourself");
                     alert.showAndWait();
                     return;
                 }
@@ -198,13 +198,13 @@ public class VacationsForSearchRow {
                 } else {
                     Alert alert = new Alert(Alert.AlertType.ERROR);
                     alert.setTitle("Why Buying again?!");
-                    alert.setHeaderText("You already request to buy this vacation. \nPlease keep calm and check your requests page soon");
+                    alert.setHeaderText("You already request to buy this ticket. \nPlease keep calm and check your requests page soon");
                     alert.showAndWait();
                 }
             } else {
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setTitle("Log in");
-                alert.setHeaderText("Only signed users are allowing to request to buy vacations\nPlease close the window, log in and try again");
+                alert.setHeaderText("Only signed users are allowing to request to buy tickets\nPlease close the window, log in and try again");
                 alert.showAndWait();
             }
         });

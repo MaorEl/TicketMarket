@@ -107,7 +107,7 @@ public class RequestForBuyerRow {
             if (!Status.equals("Approved")) {
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setTitle("Can't Buy");
-                alert.setHeaderText("Seller doesn't approved your request yet.\nYou can buy only approved vacations");
+                alert.setHeaderText("Seller doesn't approved your request yet.\nYou can buy only approved tickets");
                 alert.showAndWait();
                 return;
             }

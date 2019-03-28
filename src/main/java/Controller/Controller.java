@@ -407,7 +407,7 @@ public class Controller {
                 String vacationID = p.getVacationID();
 
                 Vacation v = (Vacation)model.read("Vacations",vacationID);
-                purchases.add(new PurchaseForSellerRow(p,v.getDestination(),new Button()));
+                purchases.add(new PurchaseForSellerRow(p,v.getFrom(),new Button()));
             }
             else
                 System.out.println("wrong table in controller getPurchasesForSellerTableTable");
@@ -425,7 +425,7 @@ public class Controller {
                 BuyingRequest b = (BuyingRequest)o[i];
                 String vacationID = b.VacationID;
                 Vacation v = (Vacation)model.read("Vacations",vacationID);
-                requests.add(new RequestForSellerRow(b,v.getDestination(), new Button(),new Button(), new Button()));
+                requests.add(new RequestForSellerRow(b,v.getFrom(), new Button(),new Button(), new Button()));
             }
             else
                 System.out.println("wrong table in controller getRequestsForSellerTableTable");
@@ -445,7 +445,8 @@ public class Controller {
                 BuyingRequest b = (BuyingRequest)o[i];
                 String vacationID = b.VacationID;
                 Vacation v = (Vacation)model.read("Vacations",vacationID);
-                requests.add(new RequestForBuyerRow(b, v.getDestination(), new Button(),new Button(), new Button()));
+                if (!v.getStatus().equals("Approved"))
+                    requests.add(new RequestForBuyerRow(b, v.getFrom(), new Button(),new Button(), new Button()));
             }
             else
                 System.out.println("wrong table in controller getRequestsForBuyerTableTable");
@@ -462,7 +463,7 @@ public class Controller {
                 Purchase p = (Purchase) o[i];
                 String vacationID = p.getVacationID();
                 Vacation v = (Vacation)model.read("Vacations",vacationID);
-                purchases.add(new PurchaseForBuyerRow(p,v.getDestination(), new Button(), new Button()));
+                purchases.add(new PurchaseForBuyerRow(p,v.getFrom(), new Button(), new Button()));
             }
             else
                 System.out.println("wrong table in controller getPurchasesForBuyerTableTable");
