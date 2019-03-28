@@ -7,18 +7,20 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
+        primaryStage.initStyle(StageStyle.UNDECORATED);
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("MainPage.fxml"));
         primaryStage.getIcons().add(new Image("images/logo.png"));
 
 
 //        Parent root = FXMLLoader.load(getClass().getResource("MainPage.fxml"));
-        primaryStage.setTitle("EveryVacation4U");
-        primaryStage.setScene(new Scene(root, 800, 500));
+        primaryStage.setTitle("Camel Tickets");
+        primaryStage.setScene(new Scene(root, 559, 870));
         primaryStage.setResizable(false);
         primaryStage.show();
         Controller controller = Controller.getInstance();
