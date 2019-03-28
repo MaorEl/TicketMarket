@@ -347,7 +347,7 @@ public class Controller {
         if(return_date.getValue()!=null) {
             return_date = (DatePicker) vacation_details[6];
             returnDate = java.sql.Date.valueOf((return_date).getValue());
-            if(checkLegalTimeStamp((String)vacation_details[7])==false)
+            if(checkLegalTimeStamp((String)vacation_details[5])==false)
                 throw new WrongFlyingDatesInfoException();
         }
         else{//return date is null so return time must be null
@@ -367,10 +367,10 @@ public class Controller {
         details[10] = (String)vacation_details[8]; //ticket type
         details[11] = (String)vacation_details[9]; //company
         details[12] = (String)vacation_details[10]; //connection country
-        boolean isBaggage = ((CheckBox)vacation_details[11]).isSelected();
+        boolean isBaggage = false;
         details[13] = String.valueOf(isBaggage); //boolean baggageinclude
         details[14] = (String)vacation_details[12]; //baggage options
-        if(isBaggage==false && !details[14].isEmpty()
+        if(isBaggage==false && details[14].isEmpty()
                 || isBaggage==true && details[14].isEmpty())
             throw new WrongBaggageInfoException();
         details[15] = (String)vacation_details[13]; //class type
