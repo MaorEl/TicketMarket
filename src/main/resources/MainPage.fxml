@@ -47,11 +47,11 @@
       <AnchorPane fx:id="vacations_pane" layoutX="147.0" layoutY="462.0" maxHeight="600.0" maxWidth="400.0" minHeight="236.0" minWidth="286.0" prefHeight="263.0" prefWidth="286.0" style="-fx-background-color: dddddd;">
          <children>
             <Pane prefHeight="0.0" prefWidth="286.0" style="-fx-background-color: ffffff;" AnchorPane.bottomAnchor="328.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-            <Button fx:id="search_vacation_button" layoutX="40.0" layoutY="47.0" mnemonicParsing="false" onAction="#search_vacation" prefHeight="26.0" prefWidth="206.0" text="All Tickets" />
-            <Button fx:id="sell_vacation_button" layoutX="40.0" layoutY="91.0" mnemonicParsing="false" onAction="#sell_vacation" prefHeight="26.0" prefWidth="206.0" text="Sell a Ticket" />
-            <Button fx:id="my_vacations_as_seller" disable="true" layoutX="41.0" layoutY="135.0" mnemonicParsing="false" onAction="#my_vacations_seller_command" prefHeight="26.0" prefWidth="206.0" text="My Tickets As Seller" />
-            <Button fx:id="my_vacations_as_buyer" disable="true" layoutX="40.0" layoutY="176.0" mnemonicParsing="false" onAction="#my_vacations_buyer_command" prefHeight="26.0" prefWidth="206.0" text="My Tickets As Buyer" />
-            <Button fx:id="my_vacations_b" disable="true" layoutX="41.0" layoutY="218.0" mnemonicParsing="false" onAction="#my_vacations" prefHeight="26.0" prefWidth="206.0" text="My Tickets" />
+            <Button fx:id="search_vacation_button" layoutX="40.0" layoutY="16.0" mnemonicParsing="false" onAction="#search_vacation" prefHeight="26.0" prefWidth="206.0" text="All Tickets" />
+            <Button fx:id="sell_vacation_button" layoutX="40.0" layoutY="65.0" mnemonicParsing="false" onAction="#sell_vacation" prefHeight="26.0" prefWidth="206.0" text="Sell a Ticket" />
+            <Button fx:id="my_vacations_as_seller" disable="true" layoutX="41.0" layoutY="115.0" mnemonicParsing="false" onAction="#my_vacations_seller_command" prefHeight="26.0" prefWidth="206.0" text="My Tickets As Seller" />
+            <Button fx:id="my_vacations_as_buyer" disable="true" layoutX="40.0" layoutY="164.0" mnemonicParsing="false" onAction="#my_vacations_buyer_command" prefHeight="26.0" prefWidth="206.0" text="My Tickets As Buyer" />
+            <Button fx:id="my_vacations_b" disable="true" layoutX="41.0" layoutY="214.0" mnemonicParsing="false" onAction="#my_vacations" prefHeight="26.0" prefWidth="206.0" text="My Tickets" />
          </children>
       </AnchorPane>
         <ImageView fitHeight="213.0" fitWidth="217.0" layoutX="6.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
