@@ -13,6 +13,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 import java.net.URL;
@@ -202,6 +203,8 @@ public class MainPageView implements Initializable {
             Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("FindMeADeal.fxml"));
             Stage stage = new Stage();
             stage.initModality(Modality.APPLICATION_MODAL);
+            stage.initStyle(StageStyle.UNDECORATED);
+
             stage.setResizable(false);
             stage.setTitle("Search Vacation");
             Scene scene = new Scene(root);
